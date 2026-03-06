@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quantum Crypto Signal Monitor</title>
+  <meta name="description" content="Institutional-grade crypto signal monitoring website with active agent swarm and LLM council" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar claw-shell">
+    <div>
+      <h1>Quantum Crypto Signal Monitor</h1>
+      <p class="subtitle">Institutional-grade AI Agent Swarm • Clawbot Desk</p>
+    </div>
+    <div class="status-wrap">
+      <span id="deskState" class="badge active">Desk Active</span>
+      <span id="dataMode" class="badge">Data: --</span>
+      <span id="llmMode" class="badge paused">LLM Council: SIM</span>
+      <span id="clock" class="badge">--:--:--</span>
+    </div>
+  </header>
+
+  <main class="grid">
+    <section class="card claw-shell wide">
+      <h2>Desk Controls</h2>
+      <div class="controls">
+        <button id="refreshNow" class="btn">Refresh Now</button>
+        <button id="toggleRun" class="btn">Pause Cycle</button>
+        <span id="health" class="badge">Server: Checking...</span>
+      </div>
+    </section>
+
+    <section class="card claw-shell">
+      <h2>Desk Metrics</h2>
+      <div class="metrics">
+        <article><h3>Win Rate</h3><p id="winRate">0%</p></article>
+        <article><h3>Open Trades</h3><p id="openTrades">0</p></article>
+        <article><h3>Closed Trades</h3><p id="closedTrades">0</p></article>
+        <article><h3>Profit %</h3><p id="profitPct">0%</p></article>
+        <article><h3>Last Confidence</h3><p id="lastConfidence">--</p></article>
+        <article><h3>Consecutive Losses</h3><p id="lossStreak">0</p></article>
+      </div>
+    </section>
+
+    <section class="card claw-shell">
+      <h2>Market Heatmap</h2>
+      <div id="heatmap" class="heatmap"></div>
+    </section>
+
+    <section class="card claw-shell wide">
+      <h2>Agent Swarm Feed</h2>
+      <div id="feed" class="feed"></div>
+    </section>
+
+    <section class="card claw-shell wide">
+      <h2>Live Signals</h2>
+      <div id="signals" class="signals"></div>
+    </section>
+
+    <section class="card claw-shell wide">
+      <h2>Latest Signal JSON</h2>
+      <pre id="latestJson">No signal yet.</pre>
+    </section>
+
+    <section class="card claw-shell wide">
+      <h2>Live Crypto News Feed</h2>
+      <div id="news" class="feed"></div>
+    </section>
+
+    <section class="card claw-shell wide">
+      <h2>Community Broadcast</h2>
+      <div class="broadcasts">
+        <pre id="discord"></pre>
+        <pre id="telegram"></pre>
+        <pre id="twitter"></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">Quantum Crypto Signal Monitor • Web Dashboard</footer>
+  <script src="app.js"></script>
+</body>
+</html>
